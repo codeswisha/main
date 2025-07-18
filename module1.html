@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 HTML Assignment</title>
+</head>
+
+<body>
+    <h1>Module 1 HTML Assignment</h1>
+    <p>This assignment covers the basics of HTML structure, form elements, and navigation.</p>
+
+    <h2>Form Creation</h2>
+    <p>Below is an example of a complete HTML form with various input elements:</p>
+    <p>Use the form below to submit your information and feedback:</p>
+
+    <form action="submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" name="email" placeholder="Enter your email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Please enter message here"></textarea>
+        <button type="submit">Submit</button>
+        <br>
+    </form>
+
+    <h2>Feedback</h2>
+    <form action="submit-feedback" method="post">
+        <fieldset>
+            <legend>How did you find this page?</legend>
+            <label>
+                <input type="radio" name="referrer" value="Google" required>
+                Google
+            </label>
+            <label>
+                <input type="radio" name="referrer" value="Friend" required>
+                Friend
+            </label>
+            <label>
+                <input type="radio" name="referrer" value="Social Media" required>
+                Social Media
+            </label>
+            <label>
+                <input type="radio" name="referrer" value="Other" required>
+                Other
+            </label>
+        </fieldset>
+    </form>
+
+    <h2>Product Selection</h2>
+    <table border="3">
+        <caption>Product Selection</caption>
+        <tr>
+            <th colspan="3">Product Selection</th>
+        </tr>
+        <tr>
+            <th>products for sale</th>
+            <th>Value</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>coding class</td>
+            <td>$100</td>
+            <td><input type="number" name="coding-class-quantity" min="1" max="10" step="1"></td>
+        </tr>
+        <tr>
+            <td>design class</td>
+            <td>$150</td>
+            <td><input type="number" name="design-class-quantity" min="1" max="10" step="1"></td>
+        </tr>
+        <tr>
+            <td>marketing class</td>
+            <td>$200</td>
+            <td><input type="number" name="marketing-class-quantity" min="1" max="10" step="1"></td>
+        </tr>
+    </table>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="african-lion-portrait-warm-light.jpg?text=Lion+Portrait" width="300" height="200" alt="Lion Portrait">
+    <img src="StockCake-Underwater Shark Scene_1752871546.jpg" width="300" height="200" alt="Underwater Shark Scene"
+        style="border-radius: 15px;">
+</body>
+
+</html>
